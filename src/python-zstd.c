@@ -29,13 +29,12 @@
 
 #include <Python.h>
 #include <stdlib.h>
-#include <stdint.h>
-#include "zstd.h"
 #include "python-zstd.h"
+#include "zstd.h"
 
 static PyObject *py_zstd_compress(PyObject *self, PyObject *args) {
 
-    DISCARD_PARAMETER self;
+//    DISCARD_PARAMETER self;
 
     PyObject *result;
     const char *source;
@@ -77,7 +76,7 @@ static PyObject *py_zstd_compress(PyObject *self, PyObject *args) {
 
 static PyObject *py_zstd_uncompress(PyObject *self, PyObject *args) {
 
-    DISCARD_PARAMETER self;
+//    DISCARD_PARAMETER self;
 
     PyObject *result;
     const char *source;

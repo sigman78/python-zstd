@@ -36,7 +36,7 @@
 static PyObject *py_zstd_compress(PyObject *self, PyObject *args);
 static PyObject *py_zstd_uncompress(PyObject *self, PyObject *args);
 
-PyMODINIT_FUNC initlz4(void);
+PyMODINIT_FUNC initzstd(void);
 
 #define COMPRESS_DOCSTRING      "Compress string, returning the compressed data.\nRaises an exception if any error occurs."
 #define COMPRESSHC_DOCSTRING    COMPRESS_DOCSTRING "\n\nCompared to compress, this gives a better compression ratio, but is much slower."
