@@ -8,6 +8,7 @@ VERSION_STR = ".".join([str(x) for x in VERSION])
 
 COPT =  {'msvc': ['/Ox', '/Izstd\\lib', '/DVERSION=\"\\\"%s\\\"\"' % VERSION_STR],
      'mingw32' : ['-O3', '-Izstd/lib', '-march=native', '-DVERSION="%s"' % VERSION_STR],
+     'unix' : ['-O3', '-Izstd/lib','-march=native', '-DVERSION="%s"' % VERSION_STR],
      'clang' : ['-O3', '-Izstd/lib','-march=native', '-DVERSION="%s"' % VERSION_STR],
      'gcc' : ['-O3', '-Izstd/lib','-march=native', '-DVERSION="%s"' % VERSION_STR]}
 
