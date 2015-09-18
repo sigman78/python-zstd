@@ -17,7 +17,7 @@ class build_ext_subclass( build_ext ):
         if c in COPT:
            for e in self.extensions:
                e.extra_compile_args = COPT[c]
-        print "building with extra", e.extra_compiler_args
+               print "building with extra", e.extra_compiler_args
         build_ext.build_extensions(self)
 
 setup(
