@@ -32,7 +32,6 @@ setup(
     package_dir={'': 'src'},
     ext_modules=[
         Extension('zstd', [
-            'zstd/lib/fse.c',
             'zstd/lib/zstd.c',
             'src/python-zstd.c'
         ])

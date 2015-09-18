@@ -32,6 +32,11 @@
 #include "python-zstd.h"
 #include "zstd.h"
 
+// workaround
+#if !(defined(__clang__) || defined(__GNUC__))
+#include "fse.c"
+#endif
+
 static PyObject *py_zstd_compress(PyObject *self, PyObject *args) {
 
 //    DISCARD_PARAMETER self;
