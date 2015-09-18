@@ -13,6 +13,7 @@ COPT =  {'msvc': ['/Ox', '/Izstd\\lib', '/DVERSION=\"\\\"%s\\\"\"' % VERSION_STR
 
 class build_ext_subclass( build_ext ):
     def build_extensions(self):
+        print "running build_extensions for", self.compiler.compiler_type
         c = self.compiler.compiler_type
         if c in COPT:
            for e in self.extensions:
